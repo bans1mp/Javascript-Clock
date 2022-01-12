@@ -195,7 +195,7 @@ body {
 
 .clock .hand.hour {
     --angle: 0 ;
-    border: 2px solid grey;
+    border: 1px solid grey;
     width: 8px;
     height: 32%;
     background-color: black;
