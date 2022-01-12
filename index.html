@@ -8,6 +8,9 @@
     <link href="styles.css" rel="stylesheet">
     <script defer src="script.js"></script>
     <title>Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,12 +34,21 @@
 
     <div class="alarmSection">
         <h2 id="heading">Alarms</h2>
-        <button id="btn">&#9547;</button>
+        <button id="btn" type="button" onclick="addAlarm()">&#9547;</button>
         <div id="line"></div>
         <div class="alarms">
-            <ul id="list">
-
-            </ul>
+            <div class="alarm alarm1" id="alarm1" hidden>
+                <h3 class="time" id="h1"></h3>
+            </div>
+            <div class="alarm alarm2" id="alarm2" hidden>
+                <h3 class="time" id="h2"></h3>
+            </div>
+            <div class="alarm alarm3" id="alarm3" hidden>
+                <h3 class="time" id="h3"></h3>
+            </div>
+            <div class="alarm alarm4" id="alarm4" hidden>
+                <h3 class="time" id="h4"></h3>
+            </div>
         </div>
     </div>
 </body>
